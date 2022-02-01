@@ -1,0 +1,68 @@
+button {
+  min-width: 20%;
+  padding: 8px 16px;
+  background-color: $white-color;
+  font-size: 16px;
+  border-radius: 20px;
+  margin: 8px 4px;
+  cursor: pointer;
+  &.regular {
+    background-color: $black-color;
+    border: 1px solid $black-color;
+    color: $white-color;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  &.danger {
+    background-color: $danger-color;
+    border: 1px solid $danger-color;
+    color: $white-color;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  &.success {
+    background-color: $success-color;
+    border: 1px solid $success-color;
+    color: $white-color;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  //Outline Buttons
+  &.regular-outline {
+    border: 1px solid $black-color;
+    color: $black-color;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  &.danger-outline {
+    border: 1px solid $danger-color;
+    color: $danger-color;
+    &:hover {
+      color: $white-color;
+      background: $danger-color;
+    }
+  }
+  &.success-outline {
+    border: 1px solid $success-color;
+    color: $success-color;
+    &:hover {
+      color: $white-color;
+      background: $success-color;
+    }
+  }
+}
+
+.action-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 12px 0;
+  button {
+    width: 100%;
+  }
+}

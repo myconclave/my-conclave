@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded&family=Quattrocento+Sans&family=Roboto:wght@300&display=swap");
+
+//Colors
+@import "./styles/colors.scss";
+
+//Buttons
+@import "./styles/buttons.scss";
+
+//Forms
+@import "./HelperComponents/Forms/Forms.scss";
+
+//Menubar
+@import "./Menubar/Menubar.scss";
+
+//Footer
+@import "./Footer/Footer.scss";
+
+//LoginPage
+@import "./LoginPage/LoginPage.scss";
+
+body {
+  margin: 0;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  overflow: scroll;
+}
+
+.holder {
+  padding: 16px 8px;
+  overflow: scroll;
+  height: 90vh;
+}
+
+.msg-display {
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.not-found {
+  margin-top: 5%;
+  text-align: center;
+}

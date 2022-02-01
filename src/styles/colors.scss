@@ -1,0 +1,54 @@
+$main-color: #6f0000;
+$white-color: #fff;
+$black-color: #000;
+$grey-color: #bdc3c7;
+$success-color: #4caf50;
+$danger-color: #f44336;
+$grey-light-color: rgb(226, 228, 228);
+.main-color {
+  color: $main-color;
+}
+
+.main-background {
+  background-color: $main-color;
+}
+
+.white-color {
+  color: $white-color;
+}
+
+.white-background {
+  background-color: $white-color;
+}
+
+.black-color {
+  color: $black-color;
+}
+
+.black-background {
+  background-color: $black-color;
+}
+
+.grey-color {
+  color: $grey-color;
+}
+
+.grey-background {
+  background-color: $grey-color;
+}
+
+.grey-light-color {
+  color: $grey-light-color;
+}
+
+.grey-light-background {
+  background-color: $grey-light-color;
+}
+
+.danger-color {
+  color: $danger-color;
+}
+
+.danger-background {
+  background-color: $danger-color;
+}

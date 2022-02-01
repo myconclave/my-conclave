@@ -1,0 +1,53 @@
+.navigation {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  min-height: 16px;
+  position: fixed;
+  width: 98%;
+  .logo {
+    font-size: 24px;
+  }
+  .dropdown {
+    .dropdown-caret {
+      cursor: pointer;
+      svg {
+        font-size: 24px;
+      }
+    }
+    .dropdown-body {
+      position: absolute;
+      top: 59px;
+      right: 10px;
+      border: 1px solid $main-color;
+      width: 150px;
+      text-align: center;
+      .dropdown-item {
+        cursor: pointer;
+        padding: 16px 8px;
+        font-weight: 400;
+        border-bottom: 1px solid $main-color;
+        color: $black-color;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .navigation-menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    color: $white-color;
+    font-size: 16px;
+    div {
+      cursor: pointer;
+    }
+    .menu-active {
+      color: $grey-color;
+      font-weight: bold;
+    }
+  }
+}
