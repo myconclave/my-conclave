@@ -13,7 +13,7 @@ const initialState = {
   token: localStorage.getItem("token"),
   isAuthenticated: localStorage.getItem("isAuthenticated") === "true",
   isLoading: false,
-  user: JSON.parse(localStorage.getItem("user")),
+  user: JSON.parse(JSON.stringify(localStorage.getItem("user"))),
 };
 
 const authReducer = (state = initialState, action) => {
