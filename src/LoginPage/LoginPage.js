@@ -9,23 +9,29 @@ const LoginPage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const store = useSelector((state) => state);
-  const [loginInfo, setLoginInfo] = useState({ email: "", password: "" });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   useEffect(() => {
     if (store.auth.isAuthenticated) {
       navigate("/dashboard");
     }
-  }, [store.auth.isAuthenticated, navigate]);
+  }, [store.auth.isAuthenticated]);
 
   const handleInputChange = (id, value) => {
-    setLoginInfo({ ...loginInfo, [id]: value });
+    if (id === "email") {
+      setEmail(value);
+    }
+    if (id === "password") {
+      setPassword(value);
+    }
   };
 
   const handleLogin = (e) => {
     e.preventDefault();
     const loginUser = {
-      email: loginInfo.email,
-      password: loginInfo.password,
+      email: email,
+      password: password,
     };
     dispatch(login(loginUser));
   };
@@ -50,14 +56,14 @@ const LoginPage = () => {
               title="Email"
               id="email"
               setInputValue={handleInputChange}
-              entity={loginInfo.email}
+              entity={email}
             />
             <InputField
               type="password"
               title="Password"
               id="password"
               setInputValue={handleInputChange}
-              entity={loginInfo.password}
+              entity={password}
             />
             <div className="action-buttons">
               <button onClick={handleLogin} className="success-outline">

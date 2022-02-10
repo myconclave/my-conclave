@@ -35,7 +35,7 @@ const Menubar = () => {
     if (store) {
       getPaths();
     }
-  }, [store, getPaths]);
+  }, []);
 
   const handleLogout = () => {
     dispatch(logout());
